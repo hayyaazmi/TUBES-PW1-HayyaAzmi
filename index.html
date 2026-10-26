@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tubes</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navigasi bar -->
+    <header class="site-header">
+        <div class="navbar">
+            <div class="logo">photobooth-io</div>
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">Ad-Free</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">spotlight</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">choose layout</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon"></div>
+        </div>
+    </header>
+
+    <!-- hero section -->
+    <div class="content">
+        <!-- area dekade/pemilihan tahun -->
+        <input type="radio" name="dekade" id="th1900" class="tahun">
+        <input type="radio" name="dekade" id="th1910" class="tahun">
+        <input type="radio" name="dekade" id="th1920" class="tahun">
+        <input type="radio" name="dekade" id="th1930" class="tahun">
+        <input type="radio" name="dekade" id="th1940" class="tahun">
+        <input type="radio" name="dekade" id="th1950" class="tahun">
+        <input type="radio" name="dekade" id="th1960" class="tahun">
+        <input type="radio" name="dekade" id="th1970" class="tahun">
+        <input type="radio" name="dekade" id="th1980" class="tahun">
+        <input type="radio" name="dekade" id="th1990" class="tahun">
+        <input type="radio" name="dekade" id="th2000" class="tahun">
+        <input type="radio" name="dekade" id="th2010" class="tahun" checked>
+        <input type="radio" name="dekade" id="thnow" class="tahun"> 
+
+        <!-- area gambar bola dunia -->
+        <section class="isi">
+                <!-- tombol kanan dan explore -->
+            <div class="bagian-kanan">
+                <button type="button" class="btn-kanan" aria-label="layers">📚</button>
+                <a href="#" class="explore"><span>Explore</span><strong>Premium</strong></a>
+            </div>
+
+                <!-- gambar bumi -->
+            <div class="bumi">
+                <img src="img/boladunia.png" alt="Bola Dunia" class="gambar-bumi">
+            </div>
+
+                <!-- zoom -->
+            <div class="zoom">
+                <button type="button" aria-label="perbesar">+</button>
+                <button type="button" aria-label="perkecil">&minus;</button>
+            </div>
+
+            <!-- area tab dekade/pemilihan tahun -->
+            <div class="bar-dekade">
+                <div class="tabs">
+                    <label for="th1900" class="tab"><span class="knob"></span><span class="label-text">1900</span></label>
+                    <label for="th1910" class="tab"><span class="knob"></span><span class="label-text">1910</span></label>
+                    <label for="th1920" class="tab"><span class="knob"></span><span class="label-text">1920</span></label>
+                    <label for="th1930" class="tab"><span class="knob"></span><span class="label-text">1930</span></label>
+                    <label for="th1940" class="tab"><span class="knob"></span><span class="label-text">1940</span></label>
+                    <label for="th1950" class="tab"><span class="knob"></span><span class="label-text">1950</span></label>
+                    <label for="th1960" class="tab"><span class="knob"></span><span class="label-text">1960</span></label>
+                    <label for="th1970" class="tab"><span class="knob"></span><span class="label-text">1970</span></label>
+                    <label for="th1980" class="tab"><span class="knob"></span><span class="label-text">1980</span></label>
+                    <label for="th1990" class="tab"><span class="knob"></span><span class="label-text">1990</span></label>
+                    <label for="th2000" class="tab"><span class="knob"></span><span class="label-text">2000</span></label>
+                    <label for="th2010" class="tab"><span class="knob"></span><span class="label-text">2010</span></label>
+                    <label for="thnow" class="tab"><span class="knob"></span><span class="label-text">NOW</span></label>
+                </div>
+            </div>
+
+            <!-- info lagu -->
+            <div class="player">
+                <div class="player-left">
+                    <img src="img/cover.png" alt="cover" class="gambar-cover">
+
+                </div>
+
+                <div class="now">
+                    <div class="now-top">
+                        <p class="lagu">House In The Wood</p>
+                        <p class="artis">Long Arm - Kellion/The Stories Of A Young Boy</p>
+                    </div>
+                    <span class="time">04:43</span>
+                </div>
+
+                <div class="kontrol-grup">
+                    <div class="tombol">
+                        <button type="button" class="bulat" aria-label="suka">&#9829; 211</button>
+                        <button type="button" class="bulat" aria-label="bagikan">&#8599;</button>
+                        <button type="button" class="bulat" aria-label="tambah ke daftar putar">&#9776;</button>
+                    </div>
+
+                    <div class="tombol">
+                        <button type="button" class="bulat biru" aria-label="putar ulang">&#8634;</button>
+                        <button type="button" class="bulat" aria-label="putar">&#9654;</button>
+                        <button type="button" class="bulat" aria-label="lagu berikutnya">&#9197;</button>
+                    </div>
+
+                    <div class="volume">
+                        <input type="range" class="vol" min="0" max="100" value="60" aria-label="volume">
+                    </div>
+                </div>
+
+                <div class="discover">
+                    <img src="img/icon.png" alt="gambar icon">
+                    <div class="discover-teks">
+                        <p class="label">DISCOVERED BY</p>
+                        <p class="nama">Subteal</p>
+                        <p class="negara">France</p>
+                        <p class="kutipan">Graphic design, turntablism & records collections // www.subteal.fr</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="jendela">
+            <div class="jdl-jendela">
+                <span class="strip"></span>
+                    <h2>Join Our WigglyPaint Community</h2>
+                <span class="strip"></span>
+            </div>
+
+            <div class="body-jendela">
+                <p>Start creating amazing wiggle and paint art today!</p>
+
+                <ul class="foot-link">
+                    <li><a href="#">About WigglyPaint</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">WigglyPaint Changelog</a></li>
+                    <li><a href="#">Contact WigglyPaint Team</a></li>
+                    <li><a href="#">AI Video Tools</a></li>
+                    <li><a href="#">AI Design Tools</a></li>
+                    <li><a href="#">DualShot Recorder</a></li>
+                    <li><a href="#">OCDrama &middot; AI Text Game</a></li>
+                </ul>
+                
+                <hr>
+
+                <p>LANGUAGES:</p>
+                <ul class="bhs">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">中文</a></li>
+                    <li><a href="#">繁體中文</a></li>
+                    <li><a href="#">日本語</a></li>
+                    <li><a href="#">한국어</a></li>
+                    <li><a href="#">Bahasa Malaysia</a></li>
+                    <li><a href="#">Bahasa Indonesia</a></li>
+                    <li><a href="#">Tiếng Việt</a></li>
+                    <li><a href="#">Español</a></li>
+                    <li><a href="#">ภาษาไทย</a></li>
+                    <li><a href="#">Português</a></li>
+                    <li><a href="#">Polski</a></li>
+                    <li><a href="#">Deutsch</a></li>
+                    <li><a href="#">Français</a></li>
+                    <li><a href="#">Русский</a></li>
+                    <li><a href="#">Italiano</a></li>
+                    <li><a href="#">Nederlands</a></li>
+                    <li><a href="#">Türkçe</a></li>
+                    <li><a href="#">عربى</a></li>
+                    <li><a href="#">हिन्दी</a></li>
+                </ul>
+
+                <hr>
+
+                <p class="copyright">&copy; 2024 WigglyPaint. Made with by Internet Janitor.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
